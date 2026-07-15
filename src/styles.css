@@ -137,3 +137,36 @@ input:focus, select:focus, button:focus-visible { outline: 3px solid #93c5fd; ou
   .sheet { break-after: page; border: 0; font-size: 13pt; }
   .solution { break-before: page; }
 }
+
+.ocr-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.button:disabled {
+  cursor: not-allowed;
+  opacity: .65;
+}
+.progress {
+  flex: 1 1 220px;
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+.progress > div {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), #38bdf8);
+  transition: width .2s ease;
+}
+.progress-label { font-weight: 800; min-width: 4rem; }
+.ocr-review { margin-top: 1.5rem; display: grid; gap: .9rem; }
+.table-wrap { overflow-x: auto; }
+.review-table { width: 100%; border-collapse: collapse; min-width: 900px; }
+.review-table th, .review-table td { border-bottom: 1px solid var(--border); padding: .65rem; text-align: left; vertical-align: top; }
+.review-table th { background: #f8fafc; }
+.review-table input[type="checkbox"] { width: auto; }
+.review-table input { min-width: 150px; }
+.warning { color: var(--warning); font-weight: 800; }
