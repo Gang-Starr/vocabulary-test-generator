@@ -170,3 +170,12 @@ input:focus, select:focus, button:focus-visible { outline: 3px solid #93c5fd; ou
 .review-table input[type="checkbox"] { width: auto; }
 .review-table input { min-width: 150px; }
 .warning { color: var(--warning); font-weight: 800; }
+.image-tools { display: grid; gap: .75rem; margin-top: 1rem; }
+.canvas-wrap { overflow: auto; border: 1px solid var(--border); border-radius: 18px; background: #0f172a; max-height: 72vh; }
+#image-canvas { display: block; width: 100%; height: auto; cursor: crosshair; touch-action: none; }
+.image-tools details img { max-width: 100%; border-radius: 18px; border: 1px solid var(--border); margin-top: .75rem; }
+.review-layout { display: grid; grid-template-columns: minmax(260px, .75fr) minmax(0, 1.25fr); gap: 1rem; align-items: start; }
+.review-image { width: 100%; border: 1px solid var(--border); border-radius: 18px; background: white; position: sticky; top: 1rem; }
+.review-actions { margin: .75rem 0; }
+.review-table tr.is-unsure { background: #fffbeb; }
+@media (max-width: 900px) { .review-layout { grid-template-columns: 1fr; } .review-image { position: static; } }
