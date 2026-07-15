@@ -1,5 +1,3 @@
-import './styles.css';
-
 const STORAGE_KEY = 'vtg-vocabulary-v1';
 const MAX_TEST_WORDS = 20;
 
